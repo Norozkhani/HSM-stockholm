@@ -1,5 +1,6 @@
 import React, { useState } from "react"; // Don't forget to import useState
 import Logo from "../Assets/HSM.png";
+import { Outlet, Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +11,26 @@ export default function Navbar() {
 
   return (
     <div className="w-100 max-h-14 bg-white flex flex-row justify-between items-center px-4">
-      <div className="flex items-center">
-        <img src={Logo} alt="HSM Logo" className="max-h-14" />
-        <h2 className="font-bold p-2 py-3">HSM Stockholm</h2>
-      </div>
+      <Link to="/">
+        <div className="flex items-center">
+          <img src={Logo} alt="HSM Logo" className="max-h-14" />
+          <h2 className="font-bold p-2 py-3">HSM Stockholm</h2>
+        </div>
+      </Link>
       {/* Show menu links on large screens */}
       <div className="hidden lg:block ml-auto">
-        <a href="/" className="px-3 py-2">
+        <Link to="/Projects" className="px-3 py-2">
           Projekt
-        </a>
-        <a href="/about" className="px-3 py-2">
+        </Link>
+        <Link to="/About" className="px-3 py-2">
           Om HSM
-        </a>
-        <a href="/services" className="px-3 py-2">
+        </Link>
+        <Link to="/Jobs" className="px-3 py-2">
           Jobba hos oss
-        </a>
-        <a href="/contact" className="px-3 py-2">
+        </Link>
+        <Link to="/Contact" className="px-3 py-2">
           Kontakta HSM
-        </a>
+        </Link>
       </div>
       {/* Integrated hamburger menu code */}
       <div className="relative">
@@ -65,22 +68,23 @@ export default function Navbar() {
                 </svg>
               </button>
               {/* Add your menu links here */}
-              <a href="/" className="block py-2">
+              <Link to="/Projects" className="block py-2">
                 Projekt
-              </a>
-              <a href="/about" className="block py-2">
+              </Link>
+              <Link to="/About" className="block py-2">
                 Om HSM
-              </a>
-              <a href="/services" className="block py-2">
+              </Link>
+              <Link to="/Jobs" className="block py-2">
                 Jobba hos oss
-              </a>
-              <a href="/contact" className="block py-2">
+              </Link>
+              <Link to="/Contact" className="block py-2">
                 Kontakta HSM
-              </a>
+              </Link>
             </div>
           </div>
         )}
       </div>
+      <Outlet />
     </div>
   );
 }
