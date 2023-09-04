@@ -5,8 +5,6 @@ import Cover3 from "../Assets/HSM-Cover3.png";
 import Cover4 from "../Assets/HSM-Cover4.png";
 import Kvalitet from "../Assets/Kvalitet.png";
 import Kompetens from "../Assets/Kompetens.png";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
 
 const contentStyle = {
   height: "260px",
@@ -87,7 +85,6 @@ export default function LandingPage() {
           </section>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

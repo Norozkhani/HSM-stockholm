@@ -2,7 +2,6 @@ import Project1 from "../Assets/HSM-Cover1.png";
 import Project2 from "../Assets/HSM-Cover2.png";
 import Project3 from "../Assets/HSM-Cover3.png";
 import Project4 from "../Assets/HSM-Cover4.png";
-import Footer from "./Footer";
 import React from "react";
 import { Card } from "antd";
 const { Meta } = Card;
@@ -73,8 +72,6 @@ export default function Projects() {
           </Card>
         ))}
       </div>
-
-      <Footer />
     </div>
   );
 }
