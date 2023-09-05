@@ -4,7 +4,7 @@ export default function Contact() {
       <div name="contact" className=" flex justify-center items-center py-4">
         <div className="flex flex-col max-w-[600px]">
           <div className="py-8 flex flex-col justify-center  items-center">
-            <p className="text-4xl font-bold inline border-b-4 border-red-600 text-center ">
+            <p className="text-3xl font-bold m-2 inline border-b-4 border-red-600 text-center ">
               Kontakta HSM Stockholm
             </p>
             <p className=" text-center  mx-auto py-4">

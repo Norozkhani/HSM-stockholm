@@ -10,10 +10,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-100 max-h-14 bg-white flex flex-row justify-between items-center px-4">
+    <div className="w-100 max-h-16 bg-white flex flex-row justify-between items-center px-4">
       <Link to="/">
         <div className="flex items-center">
-          <img src={Logo} alt="HSM Logo" className="max-h-14" />
+          <img src={Logo} alt="HSM Logo" className="max-h-16" />
           <h2 className="font-bold p-2 py-3">HSM Stockholm</h2>
         </div>
       </Link>

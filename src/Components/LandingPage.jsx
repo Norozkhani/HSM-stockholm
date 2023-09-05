@@ -34,10 +34,10 @@ export default function LandingPage() {
       </Carousel>
       {/* Välkommen till HSM sektion */}
       <div className="text-center m-8">
-        <h2 className="text-3xl font-bold m-2 p-4">
+        <h2 className="text-3xl font-bold m-2 inline border-b-4 border-red-600">
           Välkommen till HSM stockholm
         </h2>
-        <p>
+        <p className="py-4">
           Välkommen till HSM Stockholm. Vi utför alla typer av arbeten inom
           smide, stålkonstruktioner samt montage och industriservice. Vi bygger
           inte bara nytt, vi demonterar och utför rivningsarbeten också. HSM är
