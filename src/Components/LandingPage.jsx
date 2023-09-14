@@ -7,7 +7,7 @@ import Kvalitet from "../Assets/Kvalitet.png";
 import Kompetens from "../Assets/Kompetens.png";
 
 const contentStyle = {
-  height: "260px",
+  maxHeight: "500px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -17,8 +17,8 @@ const contentStyle = {
 
 export default function LandingPage() {
   return (
-    <div className="bg-stone-200">
-      <Carousel autoplay>
+    <div className="bg-stone-200 min-h-screen flex flex-col">
+      <Carousel autoplay className="h-1/2">
         <div>
           <img src={Cover1} style={contentStyle}></img>
         </div>
@@ -49,41 +49,30 @@ export default function LandingPage() {
           motorvägsbroar och motorvägsräcken.
         </p>
       </div>
-      <br />
-      <br />
-      {/* KUNSKAP OCH KVALITE */}
-      <div className="bg-white text-center ">
-        <p>Kunskap och Kvalite</p>
-        <h3 className="text-2xl font-bold">Vårat Arbetssätt</h3>
-        <div className="grid md:flex md:flex-row md:space-x-4 p-2 text-left">
-          <section className="md:w-1/2 flex flex-col justify-center items-center">
-            <img src={Kvalitet} alt="Kvalitet" className="w-full" />
-            <h4 className="font-bold">Kvalitet</h4>
-            <p>
-              Det är naturligtvis väldigt viktigt att alla våra kunder är helt
-              nöjda med allt vårt arbete och den kundservice som vi ger dem. Att
-              leverera med hög kvalitet och i rätt tid är viktigt för oss.
-              <br />
-              <br />
-              HSM Stockholm har erfarenhet och har genom åren samlat på oss en
-              bred expertis. Detta i kombination med olika vidareutbildningar
-              och certifieringar gör oss till en pålitlig partner.
-            </p>
-          </section>
-          <section className="md:w-1/2 flex flex-col justify-center items-center">
-            <img src={Kompetens} alt="Kompetens" className="w-full" />
-            <h4 className="font-bold">Våra olika certifikat och kopetenser</h4>
-            <ul>
-              <li>BSK-07</li>
-              <li>SSG Entre</li>
-              <li>WPQR som uppfyller EXC1 T.om EXC4</li>
-              <li>Svetsarprövning enl. EN287</li>
-              <li>TR/N stål</li>
-              <li>Bas U</li>
-              <li>Bas P</li>
-            </ul>
-          </section>
-        </div>
+      <div className="flex-grow-0 w-full flex flex-wrap py-20">
+        <section className="w-full md:w-1/2  md:p-12">
+          <img src={Cover1} alt="" className="w-full" />
+        </section>
+        <section className="w-full md:w-1/2 p-8 md:p-12 order-2 md:order-1">
+          <h2 className="text-3xl font-bold py-4">Smide</h2>
+          <p className="text-l">
+            Vi utför alla typer av arbeten inom smide, stålkonstruktioner samt
+            montage och industriservice. Vi bygger inte bara nytt, vi demonterar
+            och utför rivningsarbeten.
+          </p>
+        </section>
+        <section className="w-full md:w-1/2 p-8 md:p-12 order-4 md:order-3">
+          <h2 className="text-3xl font-bold py-4">Plåtslageri</h2>
+          <p className="text-l">
+            HSM Plåtslageri är ett auktoriserat plåtslageri. Vi har byggt upp en
+            bred kompetens och har lång erfarenhet av såväl renoveringar som
+            nybyggnation och utför alla slags arbeten inom byggnadsplåt och
+            plåtslageri.
+          </p>
+        </section>
+        <section className="w-full md:w-1/2  md:p-12 order-3 md:order-4">
+          <img src={Cover2} alt="" className="w-full" />
+        </section>
       </div>
     </div>
   );

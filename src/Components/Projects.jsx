@@ -8,7 +8,9 @@ const { Meta } = Card;
 
 const cardStyle = {
   width: "75%",
-  margin: " auto",
+  margin: "auto",
+
+  padding: 10,
 };
 
 const projectContainerStyle = {
