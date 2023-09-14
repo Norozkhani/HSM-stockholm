@@ -9,7 +9,6 @@ const { Meta } = Card;
 const cardStyle = {
   width: "75%",
   margin: "auto",
-
   padding: 10,
 };
 
@@ -50,10 +49,10 @@ export default function Projects() {
 
   return (
     <div>
-      <div className="p-8 bg-stone-200 ">
+      <div className="p-8  ">
         {projects.map((project, index) => (
           <Card
-            className="m-4"
+            className="m-4 bg-stone-200"
             key={index}
             cover={
               <img

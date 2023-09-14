@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="bg-stone-200">
+    <div className="">
       <div name="contact" className=" flex justify-center items-center py-4">
         <div className="flex flex-col max-w-[600px]">
           <div className="py-8 flex flex-col justify-center  items-center">
