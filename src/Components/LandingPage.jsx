@@ -17,7 +17,7 @@ const contentStyle = {
 
 export default function LandingPage() {
   return (
-    <div className="bg-stone-200 min-h-screen flex flex-col">
+    <div className=" min-h-screen flex flex-col">
       <Carousel autoplay className="h-1/2">
         <div>
           <img src={Cover1} style={contentStyle}></img>
