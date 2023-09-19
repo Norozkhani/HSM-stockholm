@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="">
       <div name="contact" className=" flex justify-center items-center py-4">
         <div className="flex flex-col max-w-[600px]">
-          <div className="py-8 flex flex-col justify-center  items-center">
+          <div className="py-12 flex flex-col justify-center items-center ">
             <p className="text-3xl font-bold m-2 inline border-b-4 border-red-600 text-center ">
               Kontakta HSM Stockholm
             </p>
@@ -18,24 +18,26 @@ export default function Contact() {
               Norozkhani med personal.
             </p>
           </div>
+
           <input
             type="text"
             name="user_name"
-            className="bg-[#f6f8fb] p-2"
+            className="bg-[#edeef0] p-2"
             placeholder="Namn"
           />
           <input
-            className="my-4 p-2 bg-[#f6f8fb]"
+            className="my-4 p-2 bg-[#edeef0]"
             type="email"
             name="user_email"
             placeholder="Email"
           />
           <textarea
-            className="bg-[#f6f8fb] p-2"
+            className="bg-[#edeef0] p-2"
             name="message"
             rows="10"
             placeholder="Meddelande"
           ></textarea>
+
           <button
             type="submit"
             value="send"

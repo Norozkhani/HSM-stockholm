@@ -3,12 +3,12 @@ import Jobimg from "../Assets/JobImg.png";
 export default function Jobs() {
   const JobData = [
     {
-      title: "Ett Ledigt jobb",
+      title: "Svetsare",
       Description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      title: "Ett till Ledigt jobb",
+      title: "Svetsare",
       Description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },

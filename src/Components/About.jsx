@@ -2,8 +2,8 @@ import AboutHeader from "../Assets/About-HSM.png";
 
 export default function About() {
   return (
-    <div>
-      <img src={AboutHeader} alt="" />
+    <div className="h-100">
+      <img src={AboutHeader} alt="" className="w-full" />
       <div className="p-8 m-8 ">
         <h2 className="text-2xl font-black">Demontering och rivningsarbeten</h2>
         <p>
