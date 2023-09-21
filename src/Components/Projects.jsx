@@ -135,7 +135,9 @@ export default function Projects() {
                 {project.images.map((image, imageIndex) => (
                   <div key={imageIndex}>
                     <img
-                      alt={`project picture ${imageIndex + 1}`}
+                      alt={`projekt bilder och tillhörande projekt namn samt beskrivning ${
+                        imageIndex + 1
+                      }`}
                       src={image}
                       style={containerStyle}
                     />

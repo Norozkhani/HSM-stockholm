@@ -4,7 +4,7 @@ import Cover1 from "../Assets/LandingPage/HSM-Cover1.png";
 import Cover2 from "../Assets/LandingPage/HSM-Cover2.png";
 
 const contentStyle = {
-  maxHeight: "900px",
+  maxHeight: "600px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -38,7 +38,11 @@ export default function LandingPage() {
       >
         {LandingPageImages.map((image, index) => (
           <div key={index}>
-            <img src={image} style={contentStyle} alt={`Slide ${index}`} />
+            <img
+              src={image}
+              style={contentStyle}
+              alt={`Bilder för Startsida ${index}`}
+            />
           </div>
         ))}
       </Carousel>
@@ -61,7 +65,7 @@ export default function LandingPage() {
       </div>
       <div className="flex-grow-0 w-full flex flex-wrap py-20 justify-center">
         <section className="w-full md:w-1/2 md:p-12">
-          <img src={Cover1} alt="" className="w-full" />
+          <img src={Cover1} alt="Bild för sektionen smide" className="w-full" />
         </section>
         <section className="w-full md:w-1/2 p-8 md:p-12 order-2 md:order-1 text-center flex flex-col justify-center">
           <div>
@@ -85,7 +89,7 @@ export default function LandingPage() {
           </div>
         </section>
         <section className="w-full md:w-1/2 md:p-12 order-3 md:order-4">
-          <img src={Cover2} alt="" className="w-full" />
+          <img src={Cover2} alt="Bilder för plåtslageri" className="w-full" />
         </section>
       </div>
     </div>
